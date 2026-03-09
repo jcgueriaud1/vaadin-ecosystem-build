@@ -94,6 +94,12 @@ public class EcosystemBuild implements Callable<Integer> {
             repoUrl = "https://github.com/samie/SimpleTimeline";
             notifyUsers = List.of("samie");
             versionOverrides = Map.of("24.*", new VersionConfig());  // Override default: use defaults for 24.*
+        }},
+        new AddonProject() {{
+            name = "autoselectcombobox";
+            repoUrl = "https://github.com/vaadin-component-factory/autoselectcombobox";
+            notifyUsers = List.of("jcgueriaud1");
+            versionOverrides = Map.of("24.*", new VersionConfig());  // Override default: use defaults for 24.*
         }}
     );
 
